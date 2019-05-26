@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='title' style="font-size: 50px; text-align:center; margin-top: 30%;">진짜 정신사납군요 ^__________^</h1>
+    <script>
+        function randomNumberFunc() {
+            let randomNumber = Math.floor(Math.random() * 255)
+            return randomNumber
+        }
+
+        let title = document.querySelector('#title')
+        let body = document.querySelector('body')
+        setInterval(function() {
+            title.style.color = 'rgb(' + randomNumberFunc() + ',' + randomNumberFunc() + ',' + randomNumberFunc() + ')'
+            body.style.backgroundColor = 'rgb(' + randomNumberFunc() + ',' + randomNumberFunc() + ',' + randomNumberFunc() + ')'
+
+        }, 100)
+    </script>
+</body>
+</html>

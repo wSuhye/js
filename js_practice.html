@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title1">This is a title</h1>
+    <h1 class="title2">This is also a title</h1>
+    <h2>Last title</h2>
+
+    <script>
+        let title1 = document.getElementById('title1')
+        title1.style.color = 'green'
+        let title2 = document.getElementsByClassName('title2')
+        title2[0].style.color = 'blue'
+        let h2 = document.getElementsByTagName('h2')
+        h2[0].style.color = 'red'
+
+
+        // let h1 = document.querySelector('h1')
+        // h1.style.color = 'green'
+
+        // let body = document.querySelector('body')
+
+        // setInterval(function() {
+        //     body.style.backgroundColor =
+        //         (body.style.backgroundColor === 'red') ? 'yellow' : 'red'
+        // },1000)
+
+        // let h1s = document.querySelectorAll('h1')
+        // console.log(h1s)
+
+        // h1s[0].style.color = 'green'
+        // h1s[1].style.color = 'blue'
+
+
+        // console.log(document)
+        // console.log(h1)
+
+        
+    </script>
+</body>
+</html>
+
+
+<!-- Math.random() : 0~1 사이의 랜덤 소수
+color를 숫자 랜덤 함수로 랜덤하게 나오게 하자! -->
