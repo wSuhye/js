@@ -1,0 +1,28 @@
+<head>
+        <script
+          src="http://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"
+        ></script>
+</head>  
+<body>
+    <h1>멍멍아 나와라 얍!</h1>
+    <button type="button">얍!</button>
+    <img src="" />
+
+    <script>
+        $('button').click(function() {
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "https://dog.ceo/api/breeds/image/random",
+                success: function(data){
+                    let imgUrl = data.message  
+                    console.log(data.message)
+                    $('img').attr('src', imgUrl)
+                }    
+            })
+        });
+    </script>
+</body>
+</html>
